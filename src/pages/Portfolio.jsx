@@ -7,7 +7,7 @@ return (
 <div className="card-body text-center">
 <h2 className="card-title">{props.title} </h2>
 <p>{props.text}</p>
-<a href="#" className="btn btn-primary">voir le site</a>
+<a href={props.link} className="btn btn-primary">voir le site</a>
 </div>
 <div className="card-footer text-center">
 <small className="text-muted">
@@ -45,11 +45,12 @@ export default function Portfolio() {
         <div className="row">
           {/*card 1*/}
           <CardPortfolio
-          src="/images/fresh-food.jpg"
-          alt="Fresh food"
-          title="Fresh food"
-          text="site de vente de produits frais en ligne"
-          real="Site realiser avec PHP et MySQL"
+          src="/images/sms-scam.png"
+          alt="Avant de cliquer"
+          title="Avant de cliquer"
+          text="site alertant sur les arnaques aux SMS"
+          real="Site realiser en HTML et CSS"
+          link="https://kameraizo.github.io/avant_de_cliquer/"
           />
           {/*card 2*/}
           <CardPortfolio
