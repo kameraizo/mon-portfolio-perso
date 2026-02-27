@@ -27,6 +27,15 @@ export default function Mentions() {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
+
+          {/*banner*/}
+    <section style={{
+      backgroundImage: "url('/images/banniere2.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "300px",}}>
+    </section>
+    {/*titre*/}
       <div style={{textAlign: "center"}}>
         <h1><strong>Mentions légales</strong></h1>
         <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>

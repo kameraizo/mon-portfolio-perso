@@ -13,9 +13,18 @@ export default function Contact() {
   return (
   <div style={{paddingTop: "56px"}}>
         <Helmet>
-            <title>Contact - Prenez contact avec John Doe </title>
+            <title>Contact - Prenez contact avec moi </title>
             <meta name="description" content="Prendre contact avec John Doe" />
         </Helmet>
+
+    {/*banner*/}
+    <section style={{
+      backgroundImage: "url('/images/banniere2.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "300px",}}>
+    </section>
+    {/*titre*/}
       <div style={{textAlign: "center"}}>
         <h1><strong>Contact</strong></h1>
         <p>pour me contacter en vue d'un entretien ou d'une future

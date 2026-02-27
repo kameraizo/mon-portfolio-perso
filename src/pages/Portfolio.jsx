@@ -29,7 +29,7 @@ export default function Portfolio() {
 
     {/*banner*/}
     <section style={{
-      backgroundImage: "url('/images/banner.jpg')",
+      backgroundImage: "url('/images/banniere2.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       height: "300px",}}>
