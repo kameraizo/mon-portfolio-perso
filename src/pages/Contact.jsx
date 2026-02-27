@@ -48,12 +48,12 @@ export default function Contact() {
           <div className="col-md-6">
             <h2>Mes coordonnées</h2>
             <hr style={{color:"blue", borderWidth: "3px", width: "95%", marginLeft: "0", }}/>
-            <strong>John Doe</strong>
-            <CoordItem icon="bi bi-pin-map" text="40 rue Laure Diebold" />
-            <CoordItem icon="bi bi-geo-alt" text="69009 Lyon France" />
-            <CoordItem icon="bi bi-telephone" text="10 20 30 40 50" />
-            <CoordItem icon="bi bi-envelope" text="john.doe@gmail.com" />
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.6181904843743!2d4.798270794097235!3d45.7788415540099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon%2C%20France!5e0!3m2!1sfr!2snl!4v1772015237575!5m2!1sfr!2snl"
+            <strong>Antoine Mullatier</strong>
+            <CoordItem icon="bi bi-pin-map" text="#" />
+            <CoordItem icon="bi bi-geo-alt" text="#" />
+            <CoordItem icon="bi bi-telephone" text="#" />
+            <CoordItem icon="bi bi-envelope" text="kameraizo69@gmail.com" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.747951054587!2d86.91506696576941!3d27.98817501453479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sEverest!5e0!3m2!1sfr!2sfr!4v1772196082096!5m2!1sfr!2sfr"
               width="100%" height="450" style={{border:0}} allowFullscreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             </div>

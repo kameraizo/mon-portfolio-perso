@@ -34,23 +34,23 @@ export default function Mentions() {
       <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>
         <div className="accordion">
         <AccordionItem id="section1" title="Editeur du site">
-          <strong><p>John Doe</p></strong>
-          <CoordItem icon="bi bi-pin-map" text="40 rue Laure Diebold" />
-          <CoordItem icon="bi bi-geo-alt" text="69009 Lyon France" />
-          <CoordItem icon="bi bi-telephone" text="10 20 30 40 50" />
-          <CoordItem icon="bi bi-envelope" text="john.doe@gmail.com" />
+          <strong><p>Antoine Mullatier</p></strong>
+          <CoordItem icon="bi bi-pin-map" text="#" />
+          <CoordItem icon="bi bi-geo-alt" text="#" />
+          <CoordItem icon="bi bi-telephone" text="#" />
+          <CoordItem icon="bi bi-envelope" text="kameraizo69@gmail.com"/>
           </AccordionItem>
           
 
         <AccordionItem id="section2" title="Hébergeur">
-          <strong><p>Alwaysdata</p></strong>
-          <p>91 rue du faubourdg saint Honoré, 75008 Paris</p>
-          <CoordItem icon="bi bi-globe" text={<a href="https://www.alwaysdata.com/">www.alwaysdata.com</a>}/>
+          <strong><p>#</p></strong>
+          <p>#</p>
+          <CoordItem icon="bi bi-globe" text={<a href="#">#</a>}/>
           </AccordionItem>
 
           <AccordionItem id="section3" title="credits">
             <strong><p>Credits</p></strong>
-            <p>ce site a ete cree par John Doe, etudiant au <a href="https://www.centre-europeen-formation.fr/">Centre Européen de formation</a></p>
+            <p>ce site a ete cree par Antoine Mullatier, etudiant au <a href="https://www.centre-europeen-formation.fr/">Centre Européen de formation</a></p>
             <p>les images utilisées sont libre de droit et on ete obtenu sur le site <a href="https://pixabay.com/fr/">pixabay</a></p>
             <p>La favicon de ce site a ete fournis par <a href="https://www.flaticon.com/">john doe icons erstellt von freepik - flaticon</a></p>
           </AccordionItem>
