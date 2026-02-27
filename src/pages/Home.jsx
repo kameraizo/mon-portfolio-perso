@@ -1,4 +1,5 @@
-  import { Helmet } from 'react-helmet-async'
+import { useState, useEffect } from "react"
+import { Helmet } from 'react-helmet-async'
 
 
 const SkillBar = (props) => {
@@ -12,25 +13,24 @@ return (
 );
 }
 
-import { useState, useEffect } from "react"
-export default function Home() {
-  <Helmet>
-  <title>home - Decouvrez le portfolio de John Doe </title>
-  <meta name="description" content="Découvrez le portfolio de John Doe" />
-  </Helmet>
 
+export default function Home() {
   const [showModal, setShowModal] = useState(false)
   const [githubData, setGithubData] = useState(null)
   useEffect(() => {
-      fetch("https://api.github.com/users/github-john-doe")
+      fetch("https://api.github.com/users/kameraizo")
           .then(res => res.json())
           .then(data => setGithubData(data))
   }, [])
   return (
         <>
+  <Helmet>
+  <title>home - Decouvrez le portfolio de Antoine </title>
+  <meta name="description" content="Découvrez le portfolio de Antoine.M" />
+  </Helmet>
       {/* HERO */}
       <section style={{
-        backgroundImage: "url('/images/hero-bg.jpg')",
+        backgroundImage: "url('/images/hero-perso.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <div style={{position: "relative", zIndex: 1}}>
-          <h1 className="text-white display-4 fw-bold">Bonjour, je suis John Doe</h1>
+          <h1 className="text-white display-4 fw-bold">Bonjour, je suis Antoine</h1>
           <h2 className="text-white">Développeur web full stack</h2>
           <button className="btn btn-danger mt-3 px-4" onClick={() => setShowModal(true)}>
             En savoir plus
@@ -68,20 +68,15 @@ export default function Home() {
           <div className="col-md-6">
             <h2>A propos</h2>
             <hr style={{color:"blue", borderWidth: "3px"}}/>
-            <img src="/images/john-doe-about.jpg" alt="John Doe" className="img-fluid mb-3" />
-            <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis.
+            <img src="/images/avatar-AM.png" alt="Avatar Antoine" className="img-fluid mb-3" />
+            <p>Mon prénom est Antoine. Actuellement en formation de développeur web et web mobile full stack via le Centre Européen de Formation, je suis cette formation depuis le 2 janvier 2026. <br />
+               Issu d'une formation de conducteur poids lourds, je me suis assez vite rendu compte que je n'aimais pas plus que ça ce métier. Mes débuts dans le milieu professionnel commencent à mes 18 ans après l'obtention de mes permis PL et mon BEP conduite et services dans le transport routier. <br />
+               J'enchaîne quelques CDD et finis par trouver un CDI pour un travail de livraison de pièces auto de nuit. Après quelques années, nous subissons un licenciement économique. Je pars alors vivre dans le Jura pour travailler dans une usine de menuiserie. Après un an, je termine mon CDD et rentre dans ma région d'origine. J'enchaîne quelques missions d'intérim (La Poste…) puis trouve un CDI en qualité de chauffeur poids lourds grue auxiliaire chez un grossiste dans le bâtiment. <br />
+               Je reste chauffeur pendant 2-3 ans avant d'évoluer au sein de la société en tant que magasinier vendeur comptoir. Je resterai finalement 8 ans dans cette société. Ayant envie d'autre chose, de responsabilités, d'évolution, de nouveaux challenges et d'une meilleure rémunération, je postule à un poste de responsable qui ne me sera finalement pas accordé. <br />
+               Je réfléchis, je gamberge, et je me dis qu'il est temps de ne plus subir ma vie professionnelle et de faire quelque chose qui me plaît. C'est alors que je m'oriente naturellement vers ce qui me passionne depuis ma plus tendre enfance : l'informatique. Passionné mais sans connaissance du milieu ni de la programmation — je suis un geek de base, et tant que mes machines fonctionnent et font tourner mes jeux, mes connaissances en informatique n'ont pas besoin de s'étendre. <br />
+               Alors je me challenge, j'apprends avec mes cours mais aussi seul de mon côté. J'essaie, je casse, je recommence, je ne comprends pas, je doute, mais je continue — je lis, me renseigne et utilise tous les outils à ma disposition. <br />
+               Voici donc mon portfolio personnel de mes projets. Le chemin est encore long et certainement semé d'embûches, mais l'arrivée n'en sera que meilleure.
             </p>
-            <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis.
-            </p>
-            <p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis.
-            </p>
-
           </div>
         
 

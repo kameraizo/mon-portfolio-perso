@@ -5,11 +5,8 @@ export default function Footer() {
     <section className="container">
       <div className="row">
         <div className="col-md-4" style={{color:"white"}}>
-          <p>John Doe</p>
-          <p>40 rue Laure Diebold</p>
-            <p>69009 Lyon France</p>  
-              <p>10 20 30 40 50 </p>
-              <p>john.doe@gmail.com</p>
+          <p>Antoine Mullatier</p>
+              <p>kameraizo69@gmail.com</p>
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer nofollow">
           <i className="bi bi-github"></i>
           </a>

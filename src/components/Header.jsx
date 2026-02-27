@@ -5,7 +5,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          John Doe
+          Antoine.M
         </NavLink>
 
         <button
