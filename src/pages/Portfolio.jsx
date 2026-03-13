@@ -88,7 +88,7 @@ export default function Portfolio() {
           />
           {/*card 6*/}
           <CardPortfolio
-          src="/images/screens.jpg"
+          src="/images/3333333.png"
           alt="Maquette d'un site web"
           title="Maquette d'un site web"
           text="creation d'un prototype d'un site"
