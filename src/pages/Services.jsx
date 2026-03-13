@@ -47,27 +47,24 @@ export default function Services() {
         <CardServices
         icon="bi-brush"
         title="UX Design"
-        text="Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis."
+        text="Conception d'interfaces intuitives et ergonomiques. Création de maquettes et prototypes avec Figma
+         pour offrir une expérience utilisateur optimale."
         />
 
         {/*card2*/}
         <CardServices
         icon="bi-code-slash"
         title="Developpement web"
-        text="Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis."
+        text="Développement d'applications web fullstack : sites vitrines, APIs REST avec Node.js/Express,
+         bases de données MongoDB, déploiement sur Render et Netlify."
         />
 
         {/*card3*/}
         <CardServices
         icon="bi-search"
         title="Référencement"
-        text="Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel
-               commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent,
-                tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis."
+        text="Optimisation SEO de vos pages web : structure HTML, balises meta, performances et accessibilité
+         pour améliorer votre visibilité sur les moteurs de recherche."
         />
   </div>
 </div> 
