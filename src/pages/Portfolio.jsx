@@ -54,20 +54,22 @@ export default function Portfolio() {
           />
           {/*card 2*/}
           <CardPortfolio
-          src="/images/restaurant-japonais.jpg"
-          alt="Restaurant Akira"
-          title="Restaurant Akira"
-          text="Site de vente de sushi en ligne"
-          real="Site realiser avec WORDPRESS"
+          src="/images/coder.jpg"
+          alt="Creation d'une API"
+          title="Port de plaisance Port-Russell"
+          text="Creation d'une API REST de gestion des reservations d'un port de plaisance, securisee par JWT"
+          real="Site realiser avec Node.js/Express/MongoDB"
+          link="https://port-russel-7pop.onrender.com"
           />
           
           {/*card 3*/}
           <CardPortfolio
-          src="/images/espace-bien-etre.jpg"
-          alt="Espace bien etre"
-          title="Espace bien etre"  
-          text="Site d'espace bien etre en ligne"
-          real="Site realiser avec Laravel"
+          src="/images/3333333.png"
+          alt="Maquette d'un site web"
+          title="Maquette d'un site web"
+          text="creation d'un prototype d'un site"
+          real="Site realiser avec Figma"
+          link="https://www.figma.com/design/bVNhmas0r91G74g1uTMcME/Sans-titre?node-id=3-72&p=f&t=59pw2EM1zDCQd6cO-0"
           />
           {/*card 4*/}
           <CardPortfolio
@@ -79,21 +81,19 @@ export default function Portfolio() {
           />
           {/*card 5*/}
           <CardPortfolio
-          src="/images/coder.jpg"
-          alt="Creation d'une API"
-          title="Port de plaisance Port-Russell"
-          text="Creation d'une API REST de gestion des reservations d'un port de plaisance, securisee par JWT"
-          real="Site realiser avec Node.js/Express/MongoDB"
-          link="https://port-russel-7pop.onrender.com"
+          src="/images/espace-bien-etre.jpg"
+          alt="Espace bien etre"
+          title="Espace bien etre"  
+          text="Site d'espace bien etre en ligne"
+          real="Site realiser avec Laravel"
           />
           {/*card 6*/}
           <CardPortfolio
-          src="/images/3333333.png"
-          alt="Maquette d'un site web"
-          title="Maquette d'un site web"
-          text="creation d'un prototype d'un site"
-          real="Site realiser avec Figma"
-          link="https://www.figma.com/design/bVNhmas0r91G74g1uTMcME/Sans-titre?node-id=3-72&p=f&t=59pw2EM1zDCQd6cO-0"
+          src="/images/restaurant-japonais.jpg"
+          alt="Restaurant Akira"
+          title="Restaurant Akira"
+          text="Site de vente de sushi en ligne"
+          real="Site realiser avec WORDPRESS"
           />
 
 
