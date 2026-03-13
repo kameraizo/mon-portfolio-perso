@@ -3,7 +3,7 @@ const CardPortfolio = (props) => {
 return ( 
 <div className="col-12 col-md-4 mb-4">
  <div className="card h-100 shadow-sm">
-<img src={props.src} className="card-img-top" alt={props.alt}/>
+<img src={props.src} className="card-img-top" alt={props.alt} style={{ height: "200px", objectFit: "cover" }}/>
 <div className="card-body text-center">
 <h2 className="card-title">{props.title} </h2>
 <p>{props.text}</p>
