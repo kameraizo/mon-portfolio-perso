@@ -81,9 +81,10 @@ export default function Portfolio() {
           <CardPortfolio
           src="/images/coder.jpg"
           alt="Creation d'une API"
-          title="Creation d'une API"
-          text="Creation d'une API RESTFULL publique"
-          real="Site realiser avec SYMFONY"
+          title="Port de plaisance Port-Russell"
+          text="Creation d'une API REST de gestion des reservations d'un port de plaisance, securisee par JWT"
+          real="Site realiser avec Node.js/Express/MongoDB"
+          link="https://port-russel-7pop.onrender.com"
           />
           {/*card 6*/}
           <CardPortfolio
