@@ -73,7 +73,7 @@ export default function Portfolio() {
           />
           {/*card 4*/}
           <CardPortfolio
-          src="/images/seo.jpg"
+          src="/images/BDD.png"
           alt="Base de donnee"
           title="BDD"
           text="creation d'une base de donnee"
