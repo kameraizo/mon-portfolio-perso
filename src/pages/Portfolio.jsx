@@ -74,10 +74,11 @@ export default function Portfolio() {
           {/*card 4*/}
           <CardPortfolio
           src="/images/seo.jpg"
-          alt="SEO"
-          title="SEO"
-          text="Site de e-commerce"
-          real="Site realiser avec SEO"
+          alt="Base de donnee"
+          title="BDD"
+          text="creation d'une base de donnee"
+          real="Site realiser avec MySQL"
+          link="https://github.com/kameraizo/tifosi"
           />
           {/*card 5*/}
           <CardPortfolio
