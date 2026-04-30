@@ -82,11 +82,12 @@ export default function Portfolio() {
           />
           {/*card 5*/}
           <CardPortfolio
-          src="/images/espace-bien-etre.jpg"
-          alt="Espace bien etre"
-          title="Espace bien etre"  
-          text="Site d'espace bien etre en ligne"
-          real="Site realiser avec Laravel"
+          src="/images/f1.jpg"
+          alt="Dashboard F1"
+          title="dashboard F1"  
+          text="Site de resultats de F1 en temps reel"
+          real="Site realiser avec REACT + VITE"
+          link="https://f1-dashboard-v1j5.onrender.com/"
           />
           {/*card 6*/}
           <CardPortfolio
