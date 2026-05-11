@@ -96,7 +96,7 @@ export default function Portfolio() {
           title="Devpro"
           text="Site de formulaire en ligne pour des devis de particuliers a des artisants"
           real="Site realiser en html " 
-          link="devpro-artisan.netlify.app/"
+          link="https://devpro-artisan.netlify.app/"
           />
 
 
