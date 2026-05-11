@@ -91,11 +91,12 @@ export default function Portfolio() {
           />
           {/*card 6*/}
           <CardPortfolio
-          src="/images/restaurant-japonais.jpg"
-          alt="Restaurant Akira"
-          title="Restaurant Akira"
-          text="Site de vente de sushi en ligne"
-          real="Site realiser avec WORDPRESS"
+          src="/images/DEVPRO.png"
+          alt="formulaire DEVPRO"
+          title="Devpro"
+          text="Site de formulaire en ligne pour des devis de particuliers a des artisants"
+          real="Site realiser en html " 
+          link="devpro-artisan.netlify.app/"
           />
 
 
