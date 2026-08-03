@@ -100,7 +100,7 @@ export default function Portfolio() {
           />
           {/*card 7*/}
           <CardPortfolio
-          src="/images/logoartisan_web_v2_HD.png"
+          src="/images/couverture_facebook_artisan_web.jpg"
           alt="L'artisan web"
           title="L'artisan web"
           text="Creation de ma societée L'artisan web"
