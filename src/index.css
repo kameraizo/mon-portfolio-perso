@@ -178,11 +178,14 @@ body { counter-reset: tc; }
   position: relative;
   overflow: hidden;
 }
-.portfolio-card-frame img {
+.portfolio-card-frame img,
+.portfolio-card-frame video {
   transition: transform 0.5s ease;
 }
 .portfolio-card:hover .portfolio-card-frame img,
-.portfolio-card:focus-within .portfolio-card-frame img {
+.portfolio-card:focus-within .portfolio-card-frame img,
+.portfolio-card:hover .portfolio-card-frame video,
+.portfolio-card:focus-within .portfolio-card-frame video {
   transform: scale(1.05);
 }
 .portfolio-card-frame::before,
@@ -433,6 +436,7 @@ footer .nav-link {
 @media (prefers-reduced-motion: reduce) {
   .portfolio-card,
   .portfolio-card-frame img,
+  .portfolio-card-frame video,
   .portfolio-card-frame::before,
   .portfolio-card-frame::after,
   .portfolio-card-scrub::before,

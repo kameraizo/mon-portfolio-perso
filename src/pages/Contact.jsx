@@ -58,10 +58,10 @@ export default function Contact() {
             <h2>Mes coordonnées</h2>
             <hr className="section-divider section-divider--compact"/>
             <strong>Antoine Mullatier</strong>
-            <CoordItem icon="bi bi-pin-map" text="#" />
-            <CoordItem icon="bi bi-geo-alt" text="#" />
+            <CoordItem icon="bi bi-pin-map" text="L'artisan web" />
+            <CoordItem icon="bi bi-geo-alt" text="Nancy" />
             <CoordItem icon="bi bi-telephone" text="#" />
-            <CoordItem icon="bi bi-envelope" text="kameraizo69@gmail.com" />
+            <CoordItem icon="bi bi-envelope" text="contact.lartisanweb@gmail.com" />
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.747951054587!2d86.91506696576941!3d27.98817501453479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sEverest!5e0!3m2!1sfr!2sfr!4v1772196082096!5m2!1sfr!2sfr"
               width="100%" height="450" style={{border:0}} allowFullscreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
             </iframe>

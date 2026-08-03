@@ -45,26 +45,26 @@ export default function Services() {
 
     {/*card1*/}
         <CardServices
-        icon="bi-brush"
-        title="UX Design"
-        text="Conception d'interfaces intuitives et ergonomiques. Création de maquettes et prototypes avec Figma
-         pour offrir une expérience utilisateur optimale."
+        icon="bi-code-slash"
+        title="Création de sites web"
+        text="Sites vitrines et applications web sur-mesure, du design à la mise en ligne : maquettage,
+         développement front/back, hébergement et nom de domaine."
         />
 
         {/*card2*/}
         <CardServices
-        icon="bi-code-slash"
-        title="Développement web"
-        text="Développement d'applications web fullstack : sites vitrines, APIs REST avec Node.js/Express,
-         bases de données MongoDB, déploiement sur Render et Netlify."
+        icon="bi-tools"
+        title="Maintenance & Support IT"
+        text="Suivi technique, mises à jour, corrections de bugs et support informatique pour artisans et
+         commerçants — pour que votre site et vos outils numériques restent fiables au quotidien."
         />
 
         {/*card3*/}
         <CardServices
-        icon="bi-search"
-        title="Référencement"
-        text="Optimisation SEO de vos pages web : structure HTML, balises meta, performances et accessibilité
-         pour améliorer votre visibilité sur les moteurs de recherche."
+        icon="bi-camera-reels"
+        title="Vidéo & Motion Design Publicitaire"
+        text="Création de vidéos publicitaires et de motion design pour mettre en valeur votre activité sur
+         les réseaux sociaux, avec une production rapide et sur-mesure."
         />
   </div>
 </div> 
