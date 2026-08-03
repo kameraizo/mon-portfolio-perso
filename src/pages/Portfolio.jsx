@@ -1,14 +1,18 @@
   import { Helmet } from 'react-helmet-async'
 const CardPortfolio = (props) => {
-return ( 
+return (
 <div className="col-12 col-md-4 mb-4">
- <div className="card h-100 shadow-sm">
+ <div className="card h-100 portfolio-card">
+<div className="portfolio-card-strip" aria-hidden="true"></div>
+<div className="portfolio-card-frame">
 <img src={props.src} className="card-img-top" alt={props.alt} style={{ height: "200px", objectFit: "cover" }}/>
+</div>
 <div className="card-body text-center">
 <h2 className="card-title">{props.title} </h2>
 <p>{props.text}</p>
-<a href={props.link} className="btn btn-primary">voir le site</a>
+<a href={props.link} className="btn btn-primary">Voir le site</a>
 </div>
+<div className="portfolio-card-scrub" aria-hidden="true"></div>
 <div className="card-footer text-center">
 <small className="text-muted">
 {props.real}
@@ -23,8 +27,8 @@ export default function Portfolio() {
   return (
   <div style={{paddingTop: "56px"}}>
   <Helmet>
-      <title>Portfolio - Déscriptions des realisations</title>
-      <meta name="description" content="Découvrez les le porfolio de John Doe" />
+      <title>Portfolio - Descriptions des réalisations</title>
+      <meta name="description" content="Découvrez le portfolio de John Doe" />
   </Helmet>
 
     {/*banner*/}
@@ -35,10 +39,10 @@ export default function Portfolio() {
       height: "300px",}}>
     </section>
     {/*titre*/}
-      <div style={{textAlign: "center",color: "black" }}>
+      <div style={{textAlign: "center"}}>
         <h1>Portfolio</h1>
          <p>Voici quelques-unes de mes réalisations</p>
-         <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
+         <hr className="section-divider"/>
       </div>
       {/*cards*/}
       <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>
@@ -48,45 +52,45 @@ export default function Portfolio() {
           src="/images/sms-scam.png"
           alt="Avant de cliquer"
           title="Avant de cliquer"
-          text="site alertant sur les arnaques aux SMS. 1er creation"
-          real="Site realiser en HTML et CSS"
+          text="Site alertant sur les arnaques aux SMS. 1ère création"
+          real="Site réalisé en HTML et CSS"
           link="https://kameraizo.github.io/avant_de_cliquer/"
           />
           {/*card 2*/}
           <CardPortfolio
           src="/images/coder.jpg"
-          alt="Creation d'une API (projet d'etudes)"
+          alt="Création d'une API (projet d'études)"
           title="Port de plaisance Port-Russell"
-          text="Creation d'une API REST de gestion des reservations d'un port de plaisance, securisee par JWT"
-          real="Site realiser avec Node.js/Express/MongoDB"
+          text="Création d'une API REST de gestion des réservations d'un port de plaisance, sécurisée par JWT"
+          real="Site réalisé avec Node.js/Express/MongoDB"
           link="https://port-russel-7pop.onrender.com"
           />
           
           {/*card 3*/}
           <CardPortfolio
           src="/images/3333333.png"
-          alt="Maquette d'un site web (projet d'etudes)"
+          alt="Maquette d'un site web (projet d'études)"
           title="Maquette d'un site web"
-          text="creation d'un prototype d'un site"
-          real="Site realiser avec Figma"
+          text="Création d'un prototype d'un site"
+          real="Site réalisé avec Figma"
           link="https://www.figma.com/design/bVNhmas0r91G74g1uTMcME/Sans-titre?node-id=3-72&p=f&t=59pw2EM1zDCQd6cO-0"
           />
           {/*card 4*/}
           <CardPortfolio
           src="/images/BDD.png"
-          alt="Base de donnee (projet d'etudes)"
+          alt="Base de données (projet d'études)"
           title="BDD"
-          text="creation d'une base de donnee"
-          real="Site realiser avec MySQL"
+          text="Création d'une base de données"
+          real="Site réalisé avec MySQL"
           link="https://github.com/kameraizo/tifosi"
           />
           {/*card 5*/}
           <CardPortfolio
           src="/images/f1.jpg"
           alt="Dashboard F1"
-          title="dashboard F1"  
-          text="Site de resultats de F1 en temps reel , creation par un fan de f1 pour les fans de f1 gratuit, sans abonnement , sans pub"
-          real="Site realiser avec REACT + VITE"
+          title="dashboard F1"
+          text="Site de résultats de F1 en temps réel, créé par un fan de F1 pour les fans de F1, gratuit, sans abonnement, sans pub"
+          real="Site réalisé avec React + Vite"
           link="https://f1-dashboard-v1j5.onrender.com/"
           />
           {/*card 6*/}
@@ -94,17 +98,17 @@ export default function Portfolio() {
           src="/images/DEVPRO.png"
           alt="formulaire DEVPRO"
           title="Devpro"
-          text="Site de formulaire en ligne pour des devis de particuliers a des artisants"
-          real="Site realiser en html " 
+          text="Site de formulaire en ligne pour des devis de particuliers à des artisans"
+          real="Site réalisé en HTML"
           link="https://devpro-artisan.netlify.app/"
           />
           {/*card 7*/}
           <CardPortfolio
-          src="/images/couverture_facebook_artisan_web.jpg"
+          src="/images/couverture_facebook_artisan_web.png"
           alt="L'artisan web"
           title="L'artisan web"
-          text="Creation de ma societée L'artisan web"
-          real="Reseaux sociaux " 
+          text="Création de ma société L'artisan web"
+          real="Réseaux sociaux "
           link="https://www.facebook.com/profile.php?id=61592667996281"
           />
           {/*card 8*/}
@@ -112,8 +116,8 @@ export default function Portfolio() {
           src="/images/channels4_profile.jpg"
           alt="Mystères & Récits"
           title="Mystères & Récits"
-          text="Chaine youtube , creation de contenu"
-          real="youtube " 
+          text="Chaîne YouTube, création de contenu"
+          real="YouTube"
           link="https://www.youtube.com/channel/UCyvIybmVFHE3IAxBQ-xENGQ"
           />
 

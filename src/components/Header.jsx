@@ -32,7 +32,7 @@ export default function Header() {
               <NavLink className="nav-link text-uppercase" to="/contact">Contact</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link text-uppercase" to="/Mentions">Mentions legales</NavLink>
+              <NavLink className="nav-link text-uppercase" to="/Mentions">Mentions légales</NavLink>
             </li>
           </ul>
         </div>

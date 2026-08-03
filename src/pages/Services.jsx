@@ -20,7 +20,7 @@ export default function Services() {
   return (
   <div style={{paddingTop: "56px"}}>
       <Helmet>
-        <title>services - Déscriptions des prestations</title>
+        <title>services - Descriptions des prestations</title>
         <meta name="description" content="Découvrez les services proposés par John Doe : UX Design, développement web et référencement." />
       </Helmet>
 
@@ -32,12 +32,12 @@ export default function Services() {
       height: "300px",}}>
     </section>
     {/*titre*/}
-      <div style={{textAlign: "center",color: "black" }}>
+      <div style={{textAlign: "center"}}>
         <h1>Mon offre de services</h1>
          <p>Voici les prestations sur les quelles
           je peux intervenir
          </p>
-         <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
+         <hr className="section-divider"/>
       </div>
       {/*cards*/}
 <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>   
@@ -54,7 +54,7 @@ export default function Services() {
         {/*card2*/}
         <CardServices
         icon="bi-code-slash"
-        title="Developpement web"
+        title="Développement web"
         text="Développement d'applications web fullstack : sites vitrines, APIs REST avec Node.js/Express,
          bases de données MongoDB, déploiement sur Render et Netlify."
         />

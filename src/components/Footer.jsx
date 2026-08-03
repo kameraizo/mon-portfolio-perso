@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom"
 export default function Footer() {
   return (
-  <footer className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <footer className="site-footer bg-dark">
     <section className="container">
       <div className="row">
         <div className="col-md-4" style={{color:"white"}}>
           <p>Antoine Mullatier</p>
-              <p>kameraizo69@gmail.com</p>
+              <p>contact.lartisanweb@gmail.com</p>
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer nofollow">
           <i className="bi bi-github"></i>
           </a>
@@ -33,7 +33,7 @@ export default function Footer() {
               <NavLink className="nav-link" to="/contact">Me contacter</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/mentions">Mentions lègales</NavLink>
+              <NavLink className="nav-link" to="/mentions">Mentions légales</NavLink>
             </li>
           </ul>
         </div>
@@ -41,22 +41,28 @@ export default function Footer() {
           <p>Mes dernières réalisations</p>
           <ul className="list-unstyled">
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">avant_de_cliquer</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Avant de cliquer</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">API REST port Russel</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Port de plaisance Port-Russell</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">Maquette de site</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Maquette d'un site web</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">SEO</NavLink>
+              <NavLink className="nav-link" to="/portfolio">BDD</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">espace bien etre</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Dashboard F1</NavLink>
             </li>
              <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">Restaurant Akira</NavLink>
+              <NavLink className="nav-link" to="/portfolio">Devpro</NavLink>
+            </li>
+             <li className="nav-item">
+              <NavLink className="nav-link" to="/portfolio">L'artisan web</NavLink>
+            </li>
+             <li className="nav-item">
+              <NavLink className="nav-link" to="/portfolio">Mystères &amp; Récits</NavLink>
             </li>
           </ul>
 

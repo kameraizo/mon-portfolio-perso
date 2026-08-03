@@ -25,7 +25,7 @@ export default function Home() {
   return (
         <>
   <Helmet>
-  <title>home - Decouvrez le portfolio de Antoine </title>
+  <title>home - Découvrez le portfolio de Antoine </title>
   <meta name="description" content="Découvrez le portfolio de Antoine.M" />
   </Helmet>
       {/* HERO */}
@@ -67,7 +67,7 @@ export default function Home() {
         
           <div className="col-md-6">
             <h2>A propos</h2>
-            <hr style={{color:"blue", borderWidth: "3px"}}/>
+            <hr className="section-divider section-divider--compact"/>
             <img src="/images/avatar-AM.png" alt="Avatar Antoine" className="img-fluid mb-3" />
             <p>Mon prénom est Antoine. Actuellement en formation de développeur web et web mobile full stack via le Centre Européen de Formation, je suis cette formation depuis le 2 janvier 2026. <br />
                Issu d'une formation de conducteur poids lourds, je me suis assez vite rendu compte que je n'aimais pas plus que ça ce métier. Mes débuts dans le milieu professionnel commencent à mes 18 ans après l'obtention de mes permis PL et mon BEP conduite et services dans le transport routier. <br />
@@ -81,8 +81,8 @@ export default function Home() {
         
 
         <div className="col-md-6"> 
-          <h2>Mes compètences</h2>
-            <hr style={{color:"blue", borderWidth: "3px",}}/>
+          <h2>Mes compétences</h2>
+            <hr className="section-divider section-divider--compact"/>
             <SkillBar
             pourcentage="HTML.5 90%"
             color="bg-danger"

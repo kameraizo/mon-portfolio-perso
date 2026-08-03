@@ -30,7 +30,7 @@ export default function Contact() {
         <p>pour me contacter en vue d'un entretien ou d'une future
           collaboration, merci de remplir le formulaire de contact.
         </p>
-        <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
+        <hr className="section-divider"/>
       </div>
 
       {/*cdre pour formulaire et coordonnées*/}
@@ -40,7 +40,7 @@ export default function Contact() {
         {/*formulaire de contact*/}
           <div className="col-md-6">
             <h2>Formulaire de contact</h2>
-            <hr style={{color:"blue", borderWidth: "3px", width: "95%", marginLeft: "0", }}/>
+            <hr className="section-divider section-divider--compact"/>
             <InputField type="text" placeholder="Votre Nom" />
             <InputField type="email" placeholder="Votre adresse Email" />
             <InputField type="text" placeholder="Votre numéro de téléphone" />
@@ -56,7 +56,7 @@ export default function Contact() {
       {/*coordonnées*/}
           <div className="col-md-6">
             <h2>Mes coordonnées</h2>
-            <hr style={{color:"blue", borderWidth: "3px", width: "95%", marginLeft: "0", }}/>
+            <hr className="section-divider section-divider--compact"/>
             <strong>Antoine Mullatier</strong>
             <CoordItem icon="bi bi-pin-map" text="#" />
             <CoordItem icon="bi bi-geo-alt" text="#" />

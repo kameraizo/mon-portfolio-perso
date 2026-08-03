@@ -21,8 +21,8 @@ export default function Mentions() {
   return (
     <div style={{paddingTop: "56px"}}>
        <Helmet>
-          <title>Mentions - Déscriptions des mentions</title>
-          <meta name="description" content="Découvrez les mentions legales de la page" />
+          <title>Mentions - Descriptions des mentions</title>
+          <meta name="description" content="Découvrez les mentions légales de la page" />
         </Helmet>
       <Helmet>
         <meta name="robots" content="noindex" />
@@ -38,7 +38,7 @@ export default function Mentions() {
     {/*titre*/}
       <div style={{textAlign: "center"}}>
         <h1><strong>Mentions légales</strong></h1>
-        <hr style={{color:"blue", borderWidth: "3px", width: "20%", margin: "auto", }}/>
+        <hr className="section-divider"/>
       </div>
       <div className="container" style={{marginBottom: "80px", marginTop: "20px"}}>
         <div className="accordion">
@@ -57,11 +57,11 @@ export default function Mentions() {
           <CoordItem icon="bi bi-globe" text={<a href="#">#</a>}/>
           </AccordionItem>
 
-          <AccordionItem id="section3" title="credits">
-            <strong><p>Credits</p></strong>
-            <p>ce site a ete cree par Antoine Mullatier, etudiant au <a href="https://www.centre-europeen-formation.fr/">Centre Européen de formation</a></p>
-            <p>les images utilisées sont libre de droit et on ete obtenu sur le site <a href="https://pixabay.com/fr/">pixabay</a></p>
-            <p>La favicon de ce site a ete fournis par <a href="https://www.flaticon.com/">john doe icons erstellt von freepik - flaticon</a></p>
+          <AccordionItem id="section3" title="Crédits">
+            <strong><p>Crédits</p></strong>
+            <p>Ce site a été créé par Antoine Mullatier, étudiant au <a href="https://www.centre-europeen-formation.fr/">Centre Européen de Formation</a></p>
+            <p>Les images utilisées sont libres de droit et ont été obtenues sur le site <a href="https://pixabay.com/fr/">Pixabay</a></p>
+            <p>La favicon de ce site a été fournie par <a href="https://www.flaticon.com/">john doe icons erstellt von freepik - flaticon</a></p>
           </AccordionItem>
           </div>
       </div>

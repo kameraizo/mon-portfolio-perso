@@ -1,42 +1,443 @@
-*{
+:root {
+  --bg: #0F1119;
+  --bg-raised: #171A24;
+  --bg-raised-2: #1D212E;
+  --ink: #E9EAF0;
+  --muted: #8A8D9E;
+  --hair: #2A2E3C;
+  --amber: #E8873C;
+  --amber-rgb: 232, 135, 60;
+  --teal: #3FB6AE;
+  --teal-rgb: 63, 182, 174;
+  --shadow-sm: 0 2px 10px rgba(4, 5, 10, 0.35);
+  --shadow-md: 0 14px 34px -10px rgba(4, 5, 10, 0.55);
+  --shadow-lg: 0 24px 50px -14px rgba(4, 5, 10, 0.65);
+  --transition-base: 0.28s ease;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.card:hover {
-  background-color: #efefef;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.3s ease;
-}
-body {
-  font-family: 'Nunito Sans', sans-serif !important;
-  font-weight: 400;
+
+html {
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body) !important;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+p { color: var(--ink); }
+
+/* Bebas Neue ships one weight only (400) — force it on headings so the
+   browser never synthesizes a fake bold on the condensed display face. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+h1 { line-height: 0.98; }
+h2 { margin-bottom: 0.5rem; }
+
+strong {
   font-weight: 600 !important;
 }
-.nav-link.active {
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  font-weight: 400 !important;
+}
+
+a { transition: color var(--transition-base); }
+
+::selection {
+  background: var(--amber);
+  color: var(--bg);
+}
+
+/* Diviseur de section — règle de timeline chronométrée avec repère keyframe */
+.section-divider {
+  position: relative;
+  display: block;
+  border: none;
+  height: 2px;
+  width: min(220px, 60%);
+  margin: 1.75rem auto 2.25rem;
+  background-image: repeating-linear-gradient(90deg, var(--hair) 0 1px, transparent 1px 10px);
+}
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--amber);
+}
+.section-divider::after {
+  content: "00:00:" counter(tc, decimal-leading-zero) ":00";
+  position: absolute;
+  right: 0;
+  top: -1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.section-divider--compact {
+  width: 70px;
+  margin: 1rem 0 1.5rem;
+}
+.section-divider--compact::after {
+  content: none;
+}
+body { counter-reset: tc; }
+.section-divider { counter-increment: tc; }
+
+/* Boutons */
+.btn {
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
   font-weight: 600;
-  text-decoration: underline;
-}
-.nav-link:hover {
-  text-decoration: underline;
-}
-footer a:hover i {
-  color: white;
-}
-footer .nav-link:hover {
-  font-weight: 600;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), filter var(--transition-base);
 }
 .btn:hover {
-  filter: brightness(0.85);
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
-footer .nav-link {
-  transition: all 0.3s ease;
+.btn-primary, .btn-danger {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: #17110A;
+}
+.btn-primary:hover, .btn-danger:hover,
+.btn-primary:focus, .btn-danger:focus {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: #17110A;
+}
+.btn-secondary {
+  background-color: var(--bg-raised-2);
+  border-color: var(--hair);
+  color: var(--ink);
+}
+.btn-secondary:hover {
+  background-color: var(--bg-raised-2);
+  border-color: var(--teal);
+  color: var(--ink);
+}
+
+/* Cards (Services, etc.) */
+.card {
+  background-color: var(--bg-raised);
+  border: 1px solid var(--hair);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  color: var(--ink);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--hair);
+}
+.card-footer {
+  background-color: var(--bg-raised-2);
+  border-top: 1px solid var(--hair);
+}
+.text-muted {
+  color: var(--muted) !important;
+}
+
+/* Cards du Portfolio — chaque projet est présenté comme un "plan" */
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-strip {
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+}
+.portfolio-card-frame {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-frame img {
+  transition: transform 0.5s ease;
+}
+.portfolio-card:hover .portfolio-card-frame img,
+.portfolio-card:focus-within .portfolio-card-frame img {
+  transform: scale(1.05);
+}
+.portfolio-card-frame::before,
+.portfolio-card-frame::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.portfolio-card-frame::before {
+  top: 8px;
+  left: 8px;
+  border-top: 2px solid var(--ink);
+  border-left: 2px solid var(--ink);
+  transform: translate(-4px, -4px);
+}
+.portfolio-card-frame::after {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 2px solid var(--ink);
+  border-right: 2px solid var(--ink);
+  transform: translate(4px, 4px);
+}
+.portfolio-card:hover .portfolio-card-frame::before,
+.portfolio-card:focus-within .portfolio-card-frame::before,
+.portfolio-card:active .portfolio-card-frame::before,
+.portfolio-card:hover .portfolio-card-frame::after,
+.portfolio-card:focus-within .portfolio-card-frame::after,
+.portfolio-card:active .portfolio-card-frame::after {
+  opacity: 0.85;
+  transform: translate(0, 0);
+}
+/* Timecode en coin — visible seulement à l'interaction, jamais posé sur l'image au repos */
+.row { counter-reset: plan; }
+.portfolio-card { counter-increment: plan; }
+.portfolio-card::after {
+  content: "PLAN " counter(plan, decimal-leading-zero);
+  position: absolute;
+  top: 0.85rem;
+  right: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  background: rgba(15, 17, 25, 0.6);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+.portfolio-card:hover::after,
+.portfolio-card:focus-within::after,
+.portfolio-card:active::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+.portfolio-card .card-title,
+.portfolio-card .card-title strong {
+  color: var(--ink);
+}
+
+/* Scrubber à keyframe — toujours visible (piste + repère), l'animation se
+   déclenche au survol ET au focus/tap pour rester utilisable sans souris. */
+.portfolio-card-scrub {
+  height: 3px;
+  margin: 0 1rem 1rem;
+  background: var(--hair);
+  border-radius: 999px;
+  position: relative;
+}
+.portfolio-card-scrub::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 14%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  transition: width 0.5s ease;
+}
+.portfolio-card-scrub::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--ink);
+  transition: left 0.5s ease, background-color 0.3s ease;
+}
+.portfolio-card:hover .portfolio-card-scrub::before,
+.portfolio-card:focus-within .portfolio-card-scrub::before,
+.portfolio-card:active .portfolio-card-scrub::before {
+  width: 100%;
+}
+.portfolio-card:hover .portfolio-card-scrub::after,
+.portfolio-card:focus-within .portfolio-card-scrub::after,
+.portfolio-card:active .portfolio-card-scrub::after {
+  left: 100%;
+  background: var(--amber);
+}
+
+/* Barres de compétences — même dégradé signature que le scrubber des cards */
+.progress {
+  background-color: var(--hair);
+  border-radius: 999px;
+  overflow: hidden;
+}
+/* Bootstrap's .bg-* utilities ship with !important; match it to override them */
+.progress-bar {
+  background-image: linear-gradient(90deg, var(--teal), var(--amber)) !important;
+  background-color: transparent !important;
+}
+
+/* Navbar */
+.navbar.bg-dark {
+  background-color: var(--bg-raised) !important;
+  border-bottom: 1px solid var(--hair);
+}
+.navbar-brand {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.5rem;
+}
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  position: relative;
+  transition: color var(--transition-base);
+}
+.nav-link:hover {
+  color: var(--teal) !important;
+}
+.nav-link:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.nav-link.active {
+  color: var(--amber) !important;
+  font-weight: 600;
+}
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 6px;
+  height: 6px;
+  transform: translateX(-50%) rotate(45deg);
+  background: var(--amber);
+}
+
+/* Footer */
+.site-footer {
+  padding: 3rem 0 2rem;
+}
+.site-footer p {
+  overflow-wrap: break-word;
+}
+footer.bg-dark {
+  background-color: var(--bg-raised) !important;
+  border-top: 1px solid var(--hair);
 }
 footer a i {
-  transition: all 0.3s ease;
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+footer a:hover i {
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+footer .nav-link {
+  text-transform: uppercase;
 }
 
+/* Formulaires */
+.form-control {
+  background-color: var(--bg-raised-2);
+  border: 1px solid var(--hair);
+  color: var(--ink);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+.form-control::placeholder {
+  color: var(--muted);
+}
+.form-control:focus {
+  background-color: var(--bg-raised-2);
+  color: var(--ink);
+  border-color: var(--teal);
+  box-shadow: 0 0 0 0.2rem rgba(var(--teal-rgb), 0.18);
+}
 
+/* Accordéon (Mentions) */
+.accordion-item {
+  background-color: var(--bg-raised);
+  border-color: var(--hair);
+}
+.accordion-button {
+  background-color: var(--bg-raised);
+  color: var(--ink);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+.accordion-button::after {
+  filter: invert(1) grayscale(1) brightness(1.8);
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--teal-rgb), 0.18);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--amber);
+  background-color: rgba(var(--amber-rgb), 0.08);
+}
+.accordion-body {
+  background-color: var(--bg-raised);
+  color: var(--ink);
+}
+.accordion-body a {
+  color: var(--teal);
+}
+
+/* Modale (Home) */
+.modal-content {
+  background-color: var(--bg-raised);
+  color: var(--ink);
+  border: 1px solid var(--hair);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.modal-header, .modal-footer {
+  border-color: var(--hair);
+}
+.btn-close {
+  filter: invert(1) grayscale(1) brightness(1.8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-card,
+  .portfolio-card-frame img,
+  .portfolio-card-frame::before,
+  .portfolio-card-frame::after,
+  .portfolio-card-scrub::before,
+  .portfolio-card-scrub::after,
+  .btn {
+    transition: none;
+  }
+}
