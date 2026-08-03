@@ -48,14 +48,14 @@ export default function Portfolio() {
           src="/images/sms-scam.png"
           alt="Avant de cliquer"
           title="Avant de cliquer"
-          text="site alertant sur les arnaques aux SMS"
+          text="site alertant sur les arnaques aux SMS. 1er creation"
           real="Site realiser en HTML et CSS"
           link="https://kameraizo.github.io/avant_de_cliquer/"
           />
           {/*card 2*/}
           <CardPortfolio
           src="/images/coder.jpg"
-          alt="Creation d'une API"
+          alt="Creation d'une API (projet d'etudes)"
           title="Port de plaisance Port-Russell"
           text="Creation d'une API REST de gestion des reservations d'un port de plaisance, securisee par JWT"
           real="Site realiser avec Node.js/Express/MongoDB"
@@ -65,7 +65,7 @@ export default function Portfolio() {
           {/*card 3*/}
           <CardPortfolio
           src="/images/3333333.png"
-          alt="Maquette d'un site web"
+          alt="Maquette d'un site web (projet d'etudes)"
           title="Maquette d'un site web"
           text="creation d'un prototype d'un site"
           real="Site realiser avec Figma"
@@ -74,7 +74,7 @@ export default function Portfolio() {
           {/*card 4*/}
           <CardPortfolio
           src="/images/BDD.png"
-          alt="Base de donnee"
+          alt="Base de donnee (projet d'etudes)"
           title="BDD"
           text="creation d'une base de donnee"
           real="Site realiser avec MySQL"
@@ -85,7 +85,7 @@ export default function Portfolio() {
           src="/images/f1.jpg"
           alt="Dashboard F1"
           title="dashboard F1"  
-          text="Site de resultats de F1 en temps reel"
+          text="Site de resultats de F1 en temps reel , creation par un fan de f1 pour les fans de f1 gratuit, sans abonnement , sans pub"
           real="Site realiser avec REACT + VITE"
           link="https://f1-dashboard-v1j5.onrender.com/"
           />
@@ -98,6 +98,25 @@ export default function Portfolio() {
           real="Site realiser en html " 
           link="https://devpro-artisan.netlify.app/"
           />
+          {/*card 7*/}
+          <CardPortfolio
+          src="/images/logoartisan_web_v2_HD.png"
+          alt="L'artisan web"
+          title="L'artisan web"
+          text="Creation de ma societée L'artisan web"
+          real="Reseaux sociaux " 
+          link="https://www.facebook.com/profile.php?id=61592667996281"
+          />
+          {/*card 8*/}
+          <CardPortfolio
+          src="/images/channels4_profile.jpg"
+          alt="Mystères & Récits"
+          title="Mystères & Récits"
+          text="Chaine youtube , creation de contenu"
+          real="youtube " 
+          link="https://www.youtube.com/channel/UCyvIybmVFHE3IAxBQ-xENGQ"
+          />
+
 
 
         </div>
